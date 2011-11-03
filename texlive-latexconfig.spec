@@ -1,5 +1,11 @@
+# revision 22998
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-latexconfig
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive latexconfig package
 Group:		Publishing
@@ -47,6 +53,7 @@ TeXLive latexconfig package.
 %{_texmfdistdir}/tex/latex/latexconfig/mllatex.ini
 %{_texmfdistdir}/tex/latex/latexconfig/pdflatex.ini
 %{_texmfdistdir}/tex/latex/latexconfig/xelatex.ini
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ TeXLive latexconfig package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
