@@ -1,12 +1,12 @@
-# revision 22998
+# revision 26375
 # category Package
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-latexconfig
-Version:	20111103
-Release:	2
+Version:	20120807
+Release:	1
 Summary:	TeXLive latexconfig package
 Group:		Publishing
 URL:		http://tug.org/texlive
