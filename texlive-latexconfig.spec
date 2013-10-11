@@ -1,11 +1,11 @@
-# revision 26375
+# revision 28991
 # category Package
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-latexconfig
-Version:	20120807
+Version:	20131011
 Release:	1
 Summary:	TeXLive latexconfig package
 Group:		Publishing
@@ -55,21 +55,3 @@ TeXLive latexconfig package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120807-1
-+ Revision: 812363
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 753161
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 718817
-- texlive-latexconfig
-- texlive-latexconfig
-- texlive-latexconfig
-- texlive-latexconfig
-
