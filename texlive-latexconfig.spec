@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-latexconfig
 Version:	20131011
-Release:	8
+Release:	9
 Summary:	TeXLive latexconfig package
 Group:		Publishing
 URL:		http://tug.org/texlive
