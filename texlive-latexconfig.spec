@@ -1,12 +1,6 @@
-# revision 28991
-# category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-latexconfig
-Version:	20131011
-Release:	9
+Version:	20171114
+Release:	1
 Summary:	TeXLive latexconfig package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -30,21 +24,7 @@ TeXLive latexconfig package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/latexconfig/color.cfg
-%{_texmfdistdir}/tex/latex/latexconfig/dvilualatex.ini
-%{_texmfdistdir}/tex/latex/latexconfig/epstopdf-sys.cfg
-%{_texmfdistdir}/tex/latex/latexconfig/graphics.cfg
-%{_texmfdistdir}/tex/latex/latexconfig/hyperref.cfg
-%{_texmfdistdir}/tex/latex/latexconfig/latex.ini
-%{_texmfdistdir}/tex/latex/latexconfig/lualatex-patch-kernel.tex
-%{_texmfdistdir}/tex/latex/latexconfig/lualatex-reset-codes.tex
-%{_texmfdistdir}/tex/latex/latexconfig/lualatex.ini
-%{_texmfdistdir}/tex/latex/latexconfig/lualatexiniconfig.tex
-%{_texmfdistdir}/tex/latex/latexconfig/lualatexquotejobname.lua
-%{_texmfdistdir}/tex/latex/latexconfig/lualatexquotejobname.tex
-%{_texmfdistdir}/tex/latex/latexconfig/mllatex.ini
-%{_texmfdistdir}/tex/latex/latexconfig/pdflatex.ini
-%{_texmfdistdir}/tex/latex/latexconfig/xelatex.ini
+%{_texmfdistdir}/tex/latex/latexconfig
 
 #-----------------------------------------------------------------------
 %prep
