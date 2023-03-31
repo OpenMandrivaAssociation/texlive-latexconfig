@@ -1,6 +1,6 @@
 Name:		texlive-latexconfig
 Version:	53525
-Release:	1
+Release:	2
 Summary:	TeXLive latexconfig package
 Group:		Publishing
 URL:		http://tug.org/texlive
