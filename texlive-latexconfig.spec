@@ -1,37 +1,18 @@
-Name:		texlive-latexconfig
-Version:	68923
+%global tl_name latexconfig
+%global tl_revision 68923
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
 Release:	1
-Summary:	TeXLive latexconfig package
+Summary:	configuration files for LaTeX-related formats
 Group:		Publishing
-URL:		https://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexconfig.r%{version}.tar.xz
+URL:		https://www.ctan.org/pkg/latexconfig
+License:	LPPL
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/latexconfig.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-TeXLive latexconfig package.
+configuration files for LaTeX-related formats
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/latexconfig
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex %{buildroot}%{_texmfdistdir}
